@@ -1,5 +1,6 @@
 package edu.phoenix.mbl402.wk5teamapp;
 
+import android.content.Context;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -17,11 +18,13 @@ import java.util.List;
 
 public class ProductListAdapter extends ArrayAdapter<Product>{
 
-    private boolean products;
+    //private boolean products;
+    private List<Product> products;
+    public ProductListAdapter(Context context, int resource, List<Product> objects) {
+        super(context, resource, objects);
 
-    public ProductListAdapter(List<String> context, LayoutInflater resource, boolean objects) {
-        super(resource, context, objects);
         products = objects;
+
     }
 
     @Override
@@ -32,7 +35,7 @@ public class ProductListAdapter extends ArrayAdapter<Product>{
                     inflate(R.layout.layout_list, parent, false);
         }
 
-        Product product =  new Product;
+        Product product =  products.get(position);
 
         TextView nameText = (TextView) convertView.findViewById(R.id.nameText);
         nameText.setText(product.getName());
