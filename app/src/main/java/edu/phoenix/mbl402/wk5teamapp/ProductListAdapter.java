@@ -32,7 +32,7 @@ public class ProductListAdapter extends ArrayAdapter<Product>{
                     inflate(R.layout.layout_list, parent, false);
         }
 
-        Product product = products.get(position);
+        Product product =  new Product;
 
         TextView nameText = (TextView) convertView.findViewById(R.id.nameText);
         nameText.setText(product.getName());
