@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Comic Stand</string>
+    <string name="action_settings">Cart</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_cart">ShoppingCartActivity</string>
+</resources>

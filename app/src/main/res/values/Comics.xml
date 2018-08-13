@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Comics">
+        <item>Black Panther Comic</item>
+        <item>The Flash Comic</item>
+        <item>The Hulk Comic</item>
+        <item>Xmen Comic</item>
+        <item>Wolverine Comic</item>
+    </string-array>
+</resources>
